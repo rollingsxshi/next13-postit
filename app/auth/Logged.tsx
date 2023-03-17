@@ -24,6 +24,7 @@ const Logged = ({ image }: Props) => {
           className='w-14 rounded-full'
           alt={image}
           src={image}
+          priority={true}
         />
       </Link>
     </li>
