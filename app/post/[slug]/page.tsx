@@ -29,10 +29,10 @@ const PostDetail = (url: URL) => {
   return (
     <div>
       <Post
-        name={data?.user.name}
-        avatar={data?.user.image}
-        postTitle={data?.title}
-        id={data?.id}
+        name={data?.user.name!}
+        avatar={data?.user.image!}
+        postTitle={data?.title!}
+        id={data?.id!}
         comments={data?.Comment}
       />
       <AddComment id={data?.id} />

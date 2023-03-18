@@ -3,7 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Post = ({ avatar, name, postTitle, id, comments }) => {
+interface Props {
+  name: string
+  avatar: string
+  postTitle: string
+  id: string
+  comments?: {}[]
+}
+
+const Post = ({ avatar, name, postTitle, id, comments }: Props) => {
   return (
     <div className="bg-white my-8 p-8 rounded-lg">
       <div className="flex items-center gap-2">
