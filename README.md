@@ -76,3 +76,8 @@ npm i @tanstack/react-query axios
 npm i react-hot-toast
 ```
 
+## Deployment
+- change build script in package.json to `npx prisma generate && npx prisma migrate deploy && next build`
+- add env variables in vercel deploy settings from .env & .env.local files
+- add deployed url to Google dev console (APIs & Services > Credentials > Create Credentials > projectName > Authorized JavaScript origins & Authorized redirect URIs
+)
